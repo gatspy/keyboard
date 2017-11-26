@@ -31,13 +31,14 @@ enableHotkeyForWindowsMatchingFilter = function(windowFilter, hotkey)
   end)
 end
 
-require('keyboard.control-escape')
+-- require('keyboard.control-escape')
 require('keyboard.delete-words')
 require('keyboard.hyper')
 require('keyboard.markdown')
-require('keyboard.microphone')
-require('keyboard.panes')
+-- require('keyboard.microphone')
+-- require('keyboard.panes')
 require('keyboard.super')
 require('keyboard.windows')
+require('keyboard.double-cmdq-to-quit')
 
 hs.notify.new({title='Hammerspoon', informativeText='Ready to rock 🤘'}):send()

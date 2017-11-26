@@ -6,15 +6,15 @@ hs.window.animationDuration = 0
 -- |        |        |
 -- +-----------------+
 function hs.window.left(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.x
-  f.y = max.y
-  f.w = max.w / 2
-  f.h = max.h
-  win:setFrame(f)
+    f.x = max.x
+    f.y = max.y
+    f.w = max.w / 2
+    f.h = max.h
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -23,15 +23,15 @@ end
 -- |        |        |
 -- +-----------------+
 function hs.window.right(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.x + (max.w / 2)
-  f.y = max.y
-  f.w = max.w / 2
-  f.h = max.h
-  win:setFrame(f)
+    f.x = max.x + (max.w / 2)
+    f.y = max.y
+    f.w = max.w / 2
+    f.h = max.h
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -40,15 +40,15 @@ end
 -- |                 |
 -- +-----------------+
 function hs.window.up(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.x
-  f.w = max.w
-  f.y = max.y
-  f.h = max.h / 2
-  win:setFrame(f)
+    f.x = max.x
+    f.w = max.w
+    f.y = max.y
+    f.h = max.h / 2
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -57,15 +57,15 @@ end
 -- |      HERE       |
 -- +-----------------+
 function hs.window.down(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.x
-  f.w = max.w
-  f.y = max.y + (max.h / 2)
-  f.h = max.h / 2
-  win:setFrame(f)
+    f.x = max.x
+    f.w = max.w
+    f.y = max.y + (max.h / 2)
+    f.h = max.h / 2
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -74,15 +74,15 @@ end
 -- |                 |
 -- +-----------------+
 function hs.window.upLeft(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:fullFrame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:fullFrame()
 
-  f.x = max.x
-  f.y = max.y
-  f.w = max.w/2
-  f.h = max.h/2
-  win:setFrame(f)
+    f.x = max.x
+    f.y = max.y
+    f.w = max.w/2
+    f.h = max.h/2
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -91,15 +91,15 @@ end
 -- |  HERE  |        |
 -- +-----------------+
 function hs.window.downLeft(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:fullFrame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:fullFrame()
 
-  f.x = max.x
-  f.y = max.y + (max.h / 2)
-  f.w = max.w/2
-  f.h = max.h/2
-  win:setFrame(f)
+    f.x = max.x
+    f.y = max.y + (max.h / 2)
+    f.w = max.w/2
+    f.h = max.h/2
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -108,16 +108,16 @@ end
 -- |        |  HERE  |
 -- +-----------------+
 function hs.window.downRight(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:fullFrame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:fullFrame()
 
-  f.x = max.x + (max.w / 2)
-  f.y = max.y + (max.h / 2)
-  f.w = max.w/2
-  f.h = max.h/2
+    f.x = max.x + (max.w / 2)
+    f.y = max.y + (max.h / 2)
+    f.w = max.w/2
+    f.h = max.h/2
 
-  win:setFrame(f)
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -126,15 +126,15 @@ end
 -- |                 |
 -- +-----------------+
 function hs.window.upRight(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:fullFrame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:fullFrame()
 
-  f.x = max.x + (max.w / 2)
-  f.y = max.y
-  f.w = max.w/2
-  f.h = max.h/2
-  win:setFrame(f)
+    f.x = max.x + (max.w / 2)
+    f.y = max.y
+    f.w = max.w/2
+    f.h = max.h/2
+    win:setFrame(f)
 end
 
 -- +--------------+
@@ -143,15 +143,15 @@ end
 -- |  |        |  |
 -- +---------------+
 function hs.window.centerWithFullHeight(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:fullFrame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:fullFrame()
 
-  f.x = max.x + (max.w / 5)
-  f.w = max.w * 3/5
-  f.y = max.y
-  f.h = max.h
-  win:setFrame(f)
+    f.x = max.x + (max.w / 5)
+    f.w = max.w * 3/5
+    f.y = max.y
+    f.h = max.h
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -160,15 +160,15 @@ end
 -- |      |          |
 -- +-----------------+
 function hs.window.left40(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.x
-  f.y = max.y
-  f.w = max.w * 0.4
-  f.h = max.h
-  win:setFrame(f)
+    f.x = max.x
+    f.y = max.y
+    f.w = max.w * 0.4
+    f.h = max.h
+    win:setFrame(f)
 end
 
 -- +-----------------+
@@ -177,28 +177,28 @@ end
 -- |      |          |
 -- +-----------------+
 function hs.window.right60(win)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+    local f = win:frame()
+    local screen = win:screen()
+    local max = screen:frame()
 
-  f.x = max.w * 0.4
-  f.y = max.y
-  f.w = max.w * 0.6
-  f.h = max.h
-  win:setFrame(f)
+    f.x = max.w * 0.4
+    f.y = max.y
+    f.w = max.w * 0.6
+    f.h = max.h
+    win:setFrame(f)
 end
 
 function hs.window.nextScreen(win)
-  local currentScreen = win:screen()
-  local allScreens = hs.screen.allScreens()
-  currentScreenIndex = hs.fnutils.indexOf(allScreens, currentScreen)
-  nextScreenIndex = currentScreenIndex + 1
+    local currentScreen = win:screen()
+    local allScreens = hs.screen.allScreens()
+    currentScreenIndex = hs.fnutils.indexOf(allScreens, currentScreen)
+    nextScreenIndex = currentScreenIndex + 1
 
-  if allScreens[nextScreenIndex] then
-    win:moveToScreen(allScreens[nextScreenIndex])
-  else
-    win:moveToScreen(allScreens[1])
-  end
+    if allScreens[nextScreenIndex] then
+        win:moveToScreen(allScreens[nextScreenIndex])
+    else
+        win:moveToScreen(allScreens[1])
+    end
 end
 
 --------------------------------------------------------------------------------
@@ -224,86 +224,86 @@ end
 windowLayoutMode = hs.hotkey.modal.new({}, 'F16')
 
 local message = require('keyboard.status-message')
-windowLayoutMode.statusMessage = message.new('Window Layout Mode (control-s)')
+windowLayoutMode.statusMessage = message.new('Window Layout Mode (control-shift-s)')
 windowLayoutMode.entered = function()
-  windowLayoutMode.statusMessage:show()
+    windowLayoutMode.statusMessage:show()
 end
 windowLayoutMode.exited = function()
-  windowLayoutMode.statusMessage:hide()
+    windowLayoutMode.statusMessage:hide()
 end
 
 -- Bind the given key to call the given function and exit WindowLayout mode
 function windowLayoutMode.bindWithAutomaticExit(mode, modifiers, key, fn)
-  mode:bind(modifiers, key, function()
-    mode:exit()
-    fn()
-  end)
+    mode:bind(modifiers, key, function()
+        mode:exit()
+        fn()
+    end)
 end
 
 windowLayoutMode:bindWithAutomaticExit({}, 'return', function()
-  hs.window.focusedWindow():maximize()
+    hs.window.focusedWindow():maximize()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'space', function()
-  hs.window.focusedWindow():centerWithFullHeight()
+    hs.window.focusedWindow():centerWithFullHeight()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'h', function()
-  hs.window.focusedWindow():left()
+    hs.window.focusedWindow():left()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'j', function()
-  hs.window.focusedWindow():down()
+    hs.window.focusedWindow():down()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'k', function()
-  hs.window.focusedWindow():up()
+    hs.window.focusedWindow():up()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'l', function()
-  hs.window.focusedWindow():right()
+    hs.window.focusedWindow():right()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({'shift'}, 'h', function()
-  hs.window.focusedWindow():left40()
+    hs.window.focusedWindow():left40()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({'shift'}, 'l', function()
-  hs.window.focusedWindow():right60()
+    hs.window.focusedWindow():right60()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'i', function()
-  hs.window.focusedWindow():upLeft()
+    hs.window.focusedWindow():upLeft()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'o', function()
-  hs.window.focusedWindow():upRight()
+    hs.window.focusedWindow():upRight()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, ',', function()
-  hs.window.focusedWindow():downLeft()
+    hs.window.focusedWindow():downLeft()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, '.', function()
-  hs.window.focusedWindow():downRight()
+    hs.window.focusedWindow():downRight()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'n', function()
-  hs.window.focusedWindow():nextScreen()
+    hs.window.focusedWindow():nextScreen()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'right', function()
-  hs.window.focusedWindow():moveOneScreenEast()
+    hs.window.focusedWindow():moveOneScreenEast()
 end)
 
 windowLayoutMode:bindWithAutomaticExit({}, 'left', function()
-  hs.window.focusedWindow():moveOneScreenWest()
+    hs.window.focusedWindow():moveOneScreenWest()
 end)
 
 -- Use Control+s to toggle WindowLayout Mode
-hs.hotkey.bind({'ctrl'}, 's', function()
-  windowLayoutMode:enter()
+hs.hotkey.bind({'ctrl','shift'}, 's', function()
+    windowLayoutMode:enter()
 end)
-windowLayoutMode:bind({'ctrl'}, 's', function()
-  windowLayoutMode:exit()
+windowLayoutMode:bind({'ctrl','shift'}, 's', function()
+    windowLayoutMode:exit()
 end)
