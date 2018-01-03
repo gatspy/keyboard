@@ -1,7 +1,7 @@
 local log = hs.logger.new('init.lua', 'debug')
 
 -- Use Control+` to reload Hammerspoon config
-hs.hotkey.bind({'ctrl'}, '`', nil, function()
+hs.hotkey.bind({'shift', 'ctrl', 'alt', 'cmd'}, '`', nil, function()
   hs.reload()
 end)
 
@@ -34,7 +34,7 @@ end
 -- require('keyboard.control-escape')
 require('keyboard.delete-words')
 require('keyboard.hyper')
-require('keyboard.markdown')
+-- require('keyboard.markdown')
 -- require('keyboard.microphone')
 -- require('keyboard.panes')
 require('keyboard.super')
