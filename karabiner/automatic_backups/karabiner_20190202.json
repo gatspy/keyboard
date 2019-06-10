@@ -148,14 +148,14 @@
                         ]
                     },
                     {
-                        "description": "Toggle caps_lock by pressing rightt_shift + right_control at the same time",
+                        "description": "Toggle caps_lock by pressing left_shift + left_control at the same time",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "right_shift",
+                                    "key_code": "left_shift",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_control"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "caps_lock"
