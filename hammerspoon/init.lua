@@ -40,5 +40,6 @@ require('keyboard.hyper')
 require('keyboard.super')
 require('keyboard.windows')
 require('keyboard.double-cmdq-to-quit')
+-- require('keyboard.network-auto-loc')
 
 hs.notify.new({title='Hammerspoon', informativeText='Ready to rock 🤘'}):send()
