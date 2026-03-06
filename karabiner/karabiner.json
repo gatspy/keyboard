@@ -191,6 +191,17 @@
                             "to": [{ "key_code": "right_command" }]
                         }
                     ]
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 12292,
+                        "vendor_id": 14000
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false
                 }
             ],
             "fn_function_keys": [
@@ -236,11 +247,11 @@
                 },
                 {
                     "from": { "key_code": "f11" },
-                    "to": [{ "key_code": "volume_down" }]
+                    "to": [{ "key_code": "vk_none" }]
                 },
                 {
                     "from": { "key_code": "f12" },
-                    "to": [{ "key_code": "volume_up" }]
+                    "to": [{ "key_code": "vk_none" }]
                 }
             ],
             "name": "Default profile",
